@@ -9,11 +9,12 @@ on:
     branches: [main]
     types:
       - completed
+  workflow_dispatch:
 
 jobs:
   Publish:
     # run only on upstream repo
-    if: github.repository_owner == 'eclipse-dataspaceconnector'
+    # if: github.repository_owner == 'eclipse-dataspaceconnector'
     runs-on: ubuntu-latest
 
     permissions:
@@ -27,6 +28,6 @@ jobs:
         with:
           java-version: '11'
 
-      - run: ./gradlew clean -x test publish
+      - run: ./gradlew clean -x test publish -PprojectVersion=0.0.1-SNAPSHOT.Agera.${{ github.run_id }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

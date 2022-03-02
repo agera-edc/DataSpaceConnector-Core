@@ -114,7 +114,7 @@ allprojects {
             repositories {
                 maven {
                     name = "GitHubPackages"
-                    url = uri("https://maven.pkg.github.com/eclipse-dataspaceconnector/DataSpaceConnector")
+                    url = uri("https://maven.pkg.github.com/agera-edc/DataSpaceConnector")
                     credentials {
                         username = System.getenv("GITHUB_ACTOR")
                         password = System.getenv("GITHUB_TOKEN")

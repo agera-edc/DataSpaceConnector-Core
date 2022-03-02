@@ -25,11 +25,11 @@ dependencies {
     api(project(":extensions:azure:blobstorage:blob-provision"))
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("blobstorage") {
-            artifactId = "blobstorage"
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("blobstorage") {
+//            artifactId = "blobstorage"
+//            from(components["java"])
+//        }
+//    }
+//}

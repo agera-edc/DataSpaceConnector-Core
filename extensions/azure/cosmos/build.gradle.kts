@@ -27,11 +27,11 @@ dependencies {
     api(project(":extensions:azure:cosmos:transfer-process-store-cosmos"))
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("cosmos") {
-            artifactId = "cosmos"
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("cosmos") {
+//            artifactId = "cosmos"
+//            from(components["java"])
+//        }
+//    }
+//}

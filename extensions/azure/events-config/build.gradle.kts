@@ -25,11 +25,11 @@ dependencies {
 }
 
 
-publishing {
-    publications {
-        create<MavenPublication>("azure-eventgrid-config") {
-            artifactId = "azure-eventgrid-config"
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("azure-eventgrid-config") {
+//            artifactId = "azure-eventgrid-config"
+//            from(components["java"])
+//        }
+//    }
+//}

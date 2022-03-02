@@ -31,11 +31,11 @@ dependencies {
     testFixturesApi("org.junit.jupiter:junit-jupiter-api:${jupiterVersion}")
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("azure-test") {
-            artifactId = "azure-test"
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("azure-test") {
+//            artifactId = "azure-test"
+//            from(components["java"])
+//        }
+//    }
+//}

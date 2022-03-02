@@ -30,11 +30,11 @@ dependencies {
     testImplementation(testFixtures(project(":common:util")))
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("data-plane-azure-storage") {
-            artifactId = "data-plane-azure-storage"
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("data-plane-azure-storage") {
+//            artifactId = "data-plane-azure-storage"
+//            from(components["java"])
+//        }
+//    }
+//}

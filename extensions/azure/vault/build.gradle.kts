@@ -36,11 +36,11 @@ dependencies {
 }
 
 
-publishing {
-    publications {
-        create<MavenPublication>("azure-vault") {
-            artifactId = "azure-vault"
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("azure-vault") {
+//            artifactId = "azure-vault"
+//            from(components["java"])
+//        }
+//    }
+//}
