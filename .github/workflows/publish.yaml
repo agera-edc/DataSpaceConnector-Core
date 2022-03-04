@@ -28,6 +28,6 @@ jobs:
         with:
           java-version: '11'
 
-      - run: ./gradlew clean -x test publish -PprojectVersion=0.0.1-SNAPSHOT.Agera.${{ github.run_id }}
+      - run: ./gradlew clean -x test publish -Pversion=0.0.1-feature-scenario-1-SNAPSHOT
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
